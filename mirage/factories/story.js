@@ -1,29 +1,28 @@
 import { Factory, faker, association } from 'ember-cli-mirage';
 
 export default Factory.extend({
-
   url() {
-    return faker.internet.url()
+    return faker.internet.url();
   },
   
   title() {
-    return faker.lorem.sentence()
+    return faker.lorem.sentence();
   },
   
   score() {
-    return faker.random.number()
+    return faker.random.number();
   },
   
   createdAt() {
-    return faker.date.past()
+    return faker.date.past();
   },
   
   user() {
-    return association()
+    return association();
   },
   
   comments() {
-    return association()
+    return association();
   }
-
 });
+
