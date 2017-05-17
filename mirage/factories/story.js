@@ -1,6 +1,15 @@
 import { Factory, faker, association } from 'ember-cli-mirage';
 
 export default Factory.extend({
+  name() {
+    return faker.lorem.word();
+  },
+  title() {
+    return faker.lorem.sentence();
+  }
+});
+/*
+export default Factory.extend({
   url() {
     return faker.internet.url();
   },
@@ -25,4 +34,4 @@ export default Factory.extend({
     return association();
   }
 });
-
+*/
