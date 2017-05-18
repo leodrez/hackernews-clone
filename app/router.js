@@ -8,7 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('news');
-  this.route('story', { path: 'story/:story_id' });
+  this.route('story', { path: '/story/:story_id' });
 });
 
 export default Router;
