@@ -1,6 +1,9 @@
-<h1>Working</h1>
+<h1>{{story.title}}</h1>
 <h3>Comments</h3>
 {{#each model as |comments|}}
-  <h5>{{comments.comment}}</h5>
+  <h4>{{comments.comment}}</h4>
 {{/each}}
-  
+{{#link-to 'index'}}
+  <h3>News</h3>
+{{/link-to}} 
+
