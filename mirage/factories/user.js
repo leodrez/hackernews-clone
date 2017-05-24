@@ -5,5 +5,4 @@ export default Factory.extend({
   username() {
     return faker.internet.userName()
   }
-
 });
