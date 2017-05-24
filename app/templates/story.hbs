@@ -1,7 +1,7 @@
 <h1>{{story.title}}</h1>
 <h3>Comments</h3>
 {{#each model as |comments|}}
-  <h4>{{comments.text}}</h4>
+  <p>{{comments.text}}</p>
 {{/each}}
 {{#link-to 'index'}}
   <h3>News</h3>

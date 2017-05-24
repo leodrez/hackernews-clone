@@ -1,37 +1,33 @@
-import { Factory, faker, association } from 'ember-cli-mirage';
+import { Factory, faker } from 'ember-cli-mirage';
 
-export default Factory.extend({
-  name() {
-    return faker.lorem.word();
-  },
-  title() {
-    return faker.lorem.sentence();
-  }
-});
-/*
 export default Factory.extend({
   url() {
     return faker.internet.url();
   },
-  
+
   title() {
     return faker.lorem.sentence();
   },
-  
+
   score() {
     return faker.random.number();
   },
   
   createdAt() {
     return faker.date.past();
-  },
-  
+  } 
+});
+
+/*
+
+User and comment not working when enabeled
+
   user() {
-    return association();
+    return faker.internet.userName();
   },
   
   comments() {
-    return association();
+    return faker.lorem.paragraph();
   }
-});
+
 */

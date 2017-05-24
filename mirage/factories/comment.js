@@ -1,29 +1,26 @@
-import { Factory, faker, association } from 'ember-cli-mirage';
+import { Factory, faker } from 'ember-cli-mirage';
 
 export default Factory.extend({
   text() {
-    return faker.lorem.sentence();
-  }
-});
-
-/*
-export default Factory.extend({
-  
-  text() {
-    return faker.lorem.paragraph()
+    return faker.lorem.paragraph();
   },
 
-  user() {
-    return association()
-  },
-
-  story() {
-    return association()
-  },
-  
   createdAt() {
     return faker.date.past()
   }
-
 });
+
+
+/*
+
+User and stories not working when enabled
+
+  user() {
+    return faker.internet.userName();
+  },
+
+  story() {
+    return faker.lorem.sentence();
+  },
+
 */
