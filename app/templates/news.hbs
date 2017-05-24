@@ -2,7 +2,11 @@
 <h2>Stories</h2>
 {{#each model as |story|}}
   {{#link-to 'story' story.id}}
-    <h3>{{story.title}}</h3>
+    <h2>{{story.title}}</h2>
   {{/link-to}}
+  <h3>{{story.user}}</h3>
+  <h5>Score: {{story.score}}</h5>
+  <p>Created at: {{story.createdAt}}</p>
+<hr>
 {{/each}}
 {{outlet}}
